@@ -1,0 +1,29 @@
+project:
+  id: "fphq"
+  name: "Foulger-Pratt Headquarters"
+  project_number: "860424"
+  address: "12435 Park Potomac Ave., Potomac, MD"
+  architect: "Perkins+Will"
+  mep_engineer: "WB Engineers+Consultants"
+  structural_engineer: "Cagley & Associates"
+  owner: "The Foulger-Pratt Companies"
+  status: "Issued for Permit and Bid"
+  date: "2015-05-28"
+  floor: "Level 2"
+
+drawings_pdf: "1837_Input - Construction Drawings.pdf"
+specs_pdf: "FPHQ Specs.pdf"
+
+llm:
+  text_model: "glm-5.1"
+  vlm_model: "qwen3-vl:235b"
+  embedding_model: "nomic-embed-text"
+  max_retries: 3
+  temperature: 0.1
+
+neo4j:
+  uri: "bolt://localhost:7687"
+  user: "neo4j"
+  password: "blueprint123"
+
+baseline_file: "fphq_knowledge_graph.json"
